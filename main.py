@@ -5,6 +5,7 @@ from urllib import request, response, error, parse
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from lxml import etree
+import re
 
 url = "https://auto.ria.com/search/?year[0].gte=2015&categories.main.id=1&brand.id[0]=24&price.currency=1&abroad.not=0&custom.not=1&page=0&size=20"
 html = urlopen(url)
@@ -78,7 +79,7 @@ while i < len(title_list):
 root = etree.Element('elements')
 j = 0
 while j < len(title_list):
-    child = etree.SubElement(root,'element')
+    child = etree.SubElement(root,'element', id = str(j+1))
 
     title1 = etree.SubElement(child, 'title')
     title1.text= title_list[j]
@@ -94,6 +95,7 @@ while j < len(title_list):
     engine.text = fuel_list[j]
 
     description = etree.SubElement(child, 'description')
+    print(f"{j} : ", re.sub(r"..*$", "", description_list[j]))
     description.text = description_list[j]
 
     mileage = etree.SubElement(child, 'mileage')
@@ -106,9 +108,4 @@ while j < len(title_list):
 s = etree.tostring(root, encoding='unicode')
 print(type(s))
 tree = etree.ElementTree(root)
-
-with open("filename.xml", "w") as f:
-    f.write(s)
-
-
-print(s)
+tree.write("filename228.xml",  xml_declaration=True, encoding="utf-8")

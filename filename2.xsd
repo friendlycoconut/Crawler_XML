@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="elements" type="elementsType"/>
+  <xs:complexType name="elementType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="price"/>
+      <xs:element type="xs:string" name="location"/>
+      <xs:element type="xs:string" name="engine"/>
+      <xs:element type="xs:string" name="description"/>
+      <xs:element type="xs:string" name="mileage"/>
+      <xs:element name="transmission">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value=" Ручная / Механика "/>
+            <xs:enumeration value=" Автомат "/>
+            <xs:enumeration value=" Типтроник "/>
+            <xs:enumeration value=" Механическая "/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="elementsType">
+    <xs:sequence>
+      <xs:element type="elementType" name="element" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
