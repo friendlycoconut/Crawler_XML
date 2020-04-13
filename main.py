@@ -1,5 +1,7 @@
 import codecs
 import html.parser as htmlparser
+
+import lxml
 import requests
 from urllib import request, response, error, parse
 from urllib.request import urlopen
@@ -10,7 +12,7 @@ import re
 url = "https://auto.ria.com/search/?year[0].gte=2015&categories.main.id=1&brand.id[0]=24&price.currency=1&abroad.not=0&custom.not=1&page=0&size=20"
 html = urlopen(url)
 soup = BeautifulSoup(html, "lxml")
-
+print(soup)
 title_list =[]
 price_list =[]
 location_list =[]
@@ -46,12 +48,12 @@ for title in titles:
     print(title.parent.get_text())
     location_list.append(title.parent.get_text())
 
-titles = soup.find_all('i', { "class" : "icon-transmission" })
+titles = soup.find_all('i', { "class" : ["icon-transmission", "icon-akp"] })
 for title in titles:
     print(title.parent.get_text())
     transmission_list.append(title.parent.get_text())
 
-titles = soup.find_all('i', { "class" : "icon-fuel" })
+titles = soup.find_all('i', { "class" : ["icon-fuel", "icon-battery"] })
 for title in titles:
     print(title.parent.get_text())
     fuel_list.append(title.parent.get_text())
@@ -108,4 +110,15 @@ while j < len(title_list):
 s = etree.tostring(root, encoding='unicode')
 print(type(s))
 tree = etree.ElementTree(root)
-tree.write("filename228.xml",  xml_declaration=True, encoding="utf-8")
+tree.write("filename.xml",  xml_declaration=True, encoding="utf-8")
+
+
+
+xml_file = lxml.etree.parse("filename.xml")
+xml_validator = lxml.etree.XMLSchema(file="filename.xsd")
+
+is_valid = xml_validator.validate(xml_file)
+
+print(is_valid)
+
+
