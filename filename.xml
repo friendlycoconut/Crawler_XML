@@ -1,21 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<!DOCTYPE elements [
-        <!ELEMENT elements (element)*>
-        <!ELEMENT element (title|price|location|engine|description|mileage|transmission)*>
-        <!ATTLIST element
-                id CDATA #REQUIRED>
-        <!ELEMENT title (#PCDATA)>
-        <!ELEMENT price (#PCDATA)>
-        <!ELEMENT location (#PCDATA)>
-        <!ELEMENT engine (#PCDATA)>
-        <!ELEMENT description (#PCDATA)>
-        <!ELEMENT mileage (#PCDATA)>
-        <!ELEMENT transmission (#PCDATA)>
-        ]>
 <elements>
     <element id="1">
         <title>Ford Focus ST 2016</title>
-        <price>16 000</price>
+        <price>16000</price>
         <location>Днепр (Днепропетровск)</location>
         <engine>Бензин, 2 л.</engine>
         <description>72 тыс. км Днепр (Днепропетровск) Бензин, 2 л. Ручная / Механика оригинал СТ, 260 лошадей, механика
@@ -41,7 +28,7 @@
     </element>
     <element id="2">
         <title>Ford Fusion se 2016</title>
-        <price>15 100</price>
+        <price>15100</price>
         <location>Малин</location>
         <engine>Бензин, 2.5 л.</engine>
         <description>44 тыс. км Малин Бензин, 2.5 л. Автомат 3FA6P0H7хGRхххх32 Проверено AUTO.RIA по реестрам МВД: дата
@@ -54,7 +41,7 @@
     </element>
     <element id="3">
         <title>Ford Fiesta 2018</title>
-        <price>11 300</price>
+        <price>11300</price>
         <location>Одесса</location>
         <engine>Бензин, 1.6 л.</engine>
         <description>16 тыс. км Одесса Бензин, 1.6 л. Автомат BH 2764 MO AUTO.RIA распознал гос.номер авто по фото
@@ -66,7 +53,7 @@
     </element>
     <element id="4">
         <title>Ford Focus SE+ 2017</title>
-        <price>9 999</price>
+        <price>9999</price>
         <location>Никополь</location>
         <engine>Бензин, 1 л.</engine>
         <description>9 тыс. км Никополь Бензин, 1 л. Автомат KA 9579 AC AUTO.RIA распознал гос.номер авто по фото
@@ -82,7 +69,7 @@
     </element>
     <element id="5">
         <title>Ford Fusion SE 2019</title>
-        <price>17 300</price>
+        <price>17300</price>
         <location>Одесса</location>
         <engine>Бензин, 2.5 л.</engine>
         <description>14 тыс. км Одесса Бензин, 2.5 л. Автомат 3FA6P0H7хKRхххх70 Проверено AUTO.RIA по реестрам МВД: дата
@@ -97,7 +84,7 @@
     </element>
     <element id="6">
         <title>Ford Focus ***LIFT***IDEAL*** 2015</title>
-        <price>9 450</price>
+        <price>9450</price>
         <location>Стрый</location>
         <engine>Дизель, 1.5 л.</engine>
         <description>158 тыс. км Стрый Дизель, 1.5 л. Ручная / Механика ВАРТУЄ УВАГИ!!!
@@ -116,7 +103,7 @@
     </element>
     <element id="7">
         <title>Ford Fusion titanium 2016</title>
-        <price>15 000</price>
+        <price>15000</price>
         <location>Бердичев</location>
         <engine>Газ/бензин, 2.5 л.</engine>
         <description>130 тыс. км Бердичев Газ/бензин, 2.5 л. Типтроник AM 5940 EA AUTO.RIA распознал гос.номер авто по
@@ -144,7 +131,7 @@
     </element>
     <element id="8">
         <title>Ford Fusion 2017</title>
-        <price>17 600</price>
+        <price>17600</price>
         <location>Харьков</location>
         <engine>Гибрид, 2 л.</engine>
         <description>80 тыс. км Харьков Гибрид, 2 л. Вариатор Продам Ford Fusion Hybrid SE 2017 Электро двигатель + ДВС
@@ -159,7 +146,7 @@
     </element>
     <element id="9">
         <title>Ford Fusion Ford Fusion HYBRID 2017</title>
-        <price>19 700</price>
+        <price>19700</price>
         <location>Одесса</location>
         <engine>Гибрид, 2 л.</engine>
         <description>75 тыс. км Одесса Гибрид, 2 л. Автомат 3FA6P0RUхHRхххх55 Проверено AUTO.RIA по реестрам МВД: дата
@@ -174,7 +161,7 @@
     </element>
     <element id="10">
         <title>Ford Fiesta 2016</title>
-        <price>12 000</price>
+        <price>12000</price>
         <location>Киев</location>
         <engine>Бензин, 1 л.</engine>
         <description>6 тыс. км Киев Бензин, 1 л. Автомат ...</description>
@@ -183,7 +170,7 @@
     </element>
     <element id="11">
         <title>Ford Fusion S 2015</title>
-        <price>10 680</price>
+        <price>10680</price>
         <location>Киев</location>
         <engine>Бензин, 2.5 л.</engine>
         <description>73 тыс. км Киев Бензин, 2.5 л. Типтроник KA 7417 AC AUTO.RIA распознал гос.номер авто по фото
@@ -199,7 +186,7 @@
     </element>
     <element id="12">
         <title>Ford Focus 2017</title>
-        <price>11 500</price>
+        <price>11500</price>
         <location>Хмельницкий</location>
         <engine>1.6 л.</engine>
         <description>42 тыс. км Хмельницкий 1.6 л. Ручная / Механика Продаю власний автомобіль, бережна експлуатація,
@@ -212,7 +199,7 @@
     </element>
     <element id="13">
         <title>Ford Edge SEL 2017</title>
-        <price>22 900</price>
+        <price>22900</price>
         <location>Полтава</location>
         <engine>Бензин, 2 л.</engine>
         <description>20 тыс. км Полтава Бензин, 2 л. Автомат 2FMPK4J9хHBхххх78 Проверено AUTO.RIA по реестрам МВД: дата
@@ -228,7 +215,7 @@
     </element>
     <element id="14">
         <title>Ford Focus 2017</title>
-        <price>12 700</price>
+        <price>12700</price>
         <location>Киев</location>
         <engine>Бензин, 2.01 л.</engine>
         <description>20 тыс. км Киев Бензин, 2.01 л. Автомат BA 4490 BX AUTO.RIA распознал гос.номер авто по фото
@@ -243,7 +230,7 @@
     </element>
     <element id="15">
         <title>Ford Focus 1.5 AT (120 л.с.) 2019</title>
-        <price>21 146</price>
+        <price>21146</price>
         <location>Житомир</location>
         <engine>Бензин, 1.5 л.</engine>
         <description>без пробега Житомир Бензин, 1.5 л. Автомат Ціна вказана з доплатою за колір.
@@ -273,7 +260,7 @@
     </element>
     <element id="16">
         <title>Ford Tourneo Custom 2.0 TDI AT F320 (130 л.с.) L2H1 2019</title>
-        <price>42 368</price>
+        <price>42368</price>
         <location>Житомир</location>
         <engine>Дизтопливо, 2.0 л.</engine>
         <description>без пробега Житомир Дизтопливо, 2.0 л. Автомат Ціна вказана з доплатою за колір.
@@ -313,7 +300,7 @@
     </element>
     <element id="17">
         <title>Ford Escape 2017</title>
-        <price>15 500</price>
+        <price>15500</price>
         <location>Херсон</location>
         <engine>Бензин, 1.5 л.</engine>
         <description>20 тыс. км Херсон Бензин, 1.5 л. Автомат Предлагаю вашему вниманию отличный автомобиль. Авто было
@@ -327,7 +314,7 @@
     </element>
     <element id="18">
         <title>Ford Kuga New 1.5D AT (120 л.с.) 2019</title>
-        <price>25 698</price>
+        <price>25698</price>
         <location>Киев</location>
         <engine>Дизтопливо, 1.5 л.</engine>
         <description>без пробега Киев Дизтопливо, 1.5 л. Автомат Frozen White&#13;
@@ -344,7 +331,7 @@
     </element>
     <element id="19">
         <title>Ford Escape EcoBoost 16v 4WD 2016</title>
-        <price>18 000</price>
+        <price>18000</price>
         <location>Днепр (Днепропетровск)</location>
         <engine>Бензин, 1.5 л.</engine>
         <description>35 тыс. км Днепр (Днепропетровск) Бензин, 1.5 л. Автомат AE 6321 KT AUTO.RIA распознал гос.номер
@@ -370,7 +357,7 @@
     </element>
     <element id="20">
         <title>Ford Focus ОФІЦІЙНА - WINNER 2018</title>
-        <price>11 500</price>
+        <price>11500</price>
         <location>Стрый</location>
         <engine>Бензин, 1 л.</engine>
         <description>33 тыс. км Стрый Бензин, 1 л. Ручная / Механика Focus придбаний в 2018р. в офіційного дилера.
