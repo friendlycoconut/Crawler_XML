@@ -2,24 +2,7 @@ from xml.dom import minidom
 
 doc = minidom.parse("filename.xml")
 
-# doc.getElementsByTagName returns NodeList
-transmission = doc.getElementsByTagName("title")[0]
-print(transmission.firstChild.data)
 
-nodeArray = doc.getElementsByTagName("elements")[0]
-childList = nodeArray.childNodes
-for child in childList:
-    if child.nodeType == child.TEXT_NODE:
-        print(child.nodeValue)
-    else:
-
-        print("id:%s, transmission:%s, title:%s, price:%s, location:%s, engine:%s, mileage:%s" %
-              (child.getAttribute("id"), ((child.getElementsByTagName("transmission")[0]).firstChild.data),
-               ((child.getElementsByTagName("title")[0]).firstChild.data),
-               ((child.getElementsByTagName("price")[0]).firstChild.data),
-               ((child.getElementsByTagName("location")[0]).firstChild.data),
-               ((child.getElementsByTagName("engine")[0]).firstChild.data),
-               ((child.getElementsByTagName("mileage")[0]).firstChild.data)))
 
 product = doc.getElementsByTagName("element")
 for prod in product:
