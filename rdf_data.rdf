@@ -1,123 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <rdf:Description rdf:about="https://auto.ria.com/1">
-        <dc:title>AUTO.RIA – Продам Ford Focus 2015 дизель 1.5 универсал бу в Ивано-Франковске, цена 9299 $</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Focus ***LIFT***EUROPA*** 2015 года, универсал белого цвета, двигатель
-            1.5 л. дизель, пробег 158 тыс. км. Цена: 9299$, возможен торг . Проверенный продавец Стас на AUTO.RIA
-        </dc:description>
-        <dc:lang>Ru</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/2">
-        <dc:title>AUTO.RIA – Продам Ford Escape 2015 бензин 1.6 внедорожник / кроссовер бу в Киеве, цена 13600 $
-        </dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Escape 2015 года, внедорожник / кроссовер синего цвета, двигатель 1.6 л.
-            бензин, пробег 90 тыс. км. Цена: 13600$, Проверенный продавец Андрей на AUTO.RIA
-        </dc:description>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:rdfs="https://www.w3.org/2000/01/rdf-schema#">
 
-        <dc:lang>Ua</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/3">
-        <dc:title>AUTO.RIA – Продам Ford Escape 2016 бензин 1.6 внедорожник / кроссовер бу в Черкассах, цена 13800 $
-        </dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Escape SE 2016 года, внедорожник / кроссовер красного цвета, двигатель
-            1.6 л. бензин, пробег 93 тыс. км. Цена: 13800$, возможен торг . Проверенный продавец Виталий на AUTO.RIA
-        </dc:description>
 
-        <dc:lang>Ru</dc:lang>
-    </rdf:Description>
+    <rdfs:Class about="MotorVehicle"/>
 
-    <rdf:Description rdf:about="https://auto.ria.com/4">
-        <dc:title>AUTO.RIA – Продам Ford Mondeo 2016 дизель 2.0 лифтбек бу в Киеве, цена 16999 $</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Mondeo Official TitaniumLux 2016 года, лифтбек белого цвета, двигатель 2
-            л.
-            дизель, пробег 153 тыс. км. Цена: 16999$, Проверенный продавец Владимир на AUTO.RIA
-        </dc:description>
+    <rdfs:Class about="Ford">
+        <rdfs:subClassOf rdf:resource="#MotorVehicle"/>
+            </rdfs:Class>
 
-        <dc:lang>Ua</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/5">
-        <dc:title>AUTO.RIA – Продам Ford Mondeo 2016 дизель 2.0 лифтбек бу в Киеве, цена 16999 $</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Mondeo Official TitaniumLux 2016 года, лифтбек белого цвета, двигатель 2
-            л.
-            дизель, пробег 153 тыс. км. Цена: 16999$, Проверенный продавец Владимир на AUTO.RIA
-        </dc:description>
+        <rdfs:Class about="Focus">
+        <rdfs:subClassOf rdf:resource="#Ford"/>
+            </rdfs:Class>
 
-        <dc:lang>Ua</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/6">
-        <dc:title>AUTO.RIA – Продам Ford Escape 2017 бензин 1.5 внедорожник / кроссовер бу в Киеве, цена 14900 $
-        </dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Escape SE 4*4 ecobust 2017 года, внедорожник / кроссовер серого цвета,
-            двигатель
-            1.5 л. бензин, пробег 72 тыс. км. Цена: 14900$, возможен торг . Проверенный продавец Богдан на AUTO.RIA
-        </dc:description>
+        <rdfs:Class about="Escape">
+        <rdfs:subClassOf rdf:resource="#Ford"/>
+            </rdfs:Class>
 
-        <dc:lang>UA</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/7">
-        <dc:title>AUTO.RIA – Продам Ford Escape 2017 бензин 1.5 внедорожник / кроссовер бу в Киеве, цена 14900 $
-        </dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>Продаю на AUTO.RIA Ford Escape SE 4*4 ecobust 2017 года, внедорожник / кроссовер серого цвета,
-            двигатель
-            1.5 л. бензин, пробег 72 тыс. км. Цена: 14900$, возможен торг . Проверенный продавец Богдан на AUTO.RIA
-        </dc:description>
+        <rdfs:Class about="Kuga">
+        <rdfs:subClassOf rdf:resource="#Ford"/>
+            </rdfs:Class>
 
-        <dc:lang>ru</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/18">
-        <dc:title>AUTO.RIA - Selling Ford Edge 2018 gasoline 2.7 SUV / crossover used in Kiev, price $ 30,000</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>For sale on AUTO.RIA 2018 Ford Edge sport, red SUV / crossover, 2.7 liter engine. gasoline,
-            mileage 24
-            thousand km. Price: $ 30,000, bargaining, exchange is possible. Verified seller by Andrey on AUTO.RIA
-        </dc:description>
-        <dc:lang>en</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/19">
-        <dc:title>AUTO.RIA - Selling Ford Edge 2019 gasoline 2.0 SUV / crossover used in Kiev, price $ 33,500</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>For sale on AUTO.RIA 2019 Ford Edge Titanium, gray SUV / crossover, 2 liter engine. gasoline,
-            mileage 1
-            thousand km. Price: $ 33,500, Verified seller Alexander on AUTO.RIA
-        </dc:description>
 
-        <dc:lang>en</dc:lang>
-    </rdf:Description>
-    <rdf:Description rdf:about="https://auto.ria.com/20">
-        <dc:title>AUTO.RIA - Selling Ford Mustang 2015 gasoline 2.3 convertible used in Kiev, price $ 22,900</dc:title>
-        <dc:site_name>auto.ria.com</dc:site_name>
-        <dc:site_name>AUTO.RIA</dc:site_name>
-        <dc:type>article</dc:type>
-        <dc:description>For sale on AUTO.RIA Ford Mustang 2015, black convertible, 2.3 liter engine. gasoline, mileage
-            75
-            thousand km. Price: $ 22,900, bidding is possible. Verified seller Oleg on AUTO.RIA
-        </dc:description>
+        <rdfs:Class about="Fiesta">
+        <rdfs:subClassOf rdf:resource="#Ford"/>
+            </rdfs:Class>
 
-        <dc:lang>en</dc:lang>
-    </rdf:Description>
+        <rdfs:Class about="Mondeo">
+        <rdfs:subClassOf rdf:resource="#Ford"/>
+            </rdfs:Class>
+
+      <rdf:Property about="year">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property about="price">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property ID="registeredTo">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property ID="colour">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property ID="engineType">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property ID="fuelType">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+      <rdf:Property ID="number">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+
+      <rdf:Property ID="milleage">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+
+      <rdf:Property ID="transmission">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+
+      <rdf:Property ID="driveUnit">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
+
+      <rdf:Property ID="VIN">
+    <rdfs:domain rdf:resource="#MotorVehicle"/>
+    <rdfs:range
+      rdf:resource="https://www.w3.org/2000/01/rdf-schema#Literal"/>
+  </rdf:Property>
+
 </rdf:RDF>
